@@ -1,0 +1,38 @@
+#option .a {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: #a2a8a6;
+    display: inline-block;
+}
+
+#option .b {
+    background: none;
+    border: 0;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+#option .b>p {
+    padding: 0 5px;
+    white-space: nowrap;
+}
+#option * {
+    color: white;
+}
+
+#option .c {
+    position: absolute;
+    max-height: 200px;
+    overflow: overlay;
+}
+
+#option .c li:hover {
+    background: #fd9e9e;
+}
+#option .c li {
+    display: flex;
+    justify-content: center;
+    padding: 5% 35%;
+    align-items: center;
+}

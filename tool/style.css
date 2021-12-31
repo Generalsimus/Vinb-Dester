@@ -1,0 +1,1225 @@
+.footer {
+    background: #2b2b2b;
+    padding: 0 3%;
+}
+
+.footw {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-height: 50px;
+}
+
+.footw>li {
+    width: 29.3%;
+    margin: 5% 2%;
+    position: relative;
+}
+
+.footer>p {
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    border-bottom: navajowhite;
+    display: inline-block;
+    width: 100%;
+    padding-top: 1%;
+    font-size: small;
+}
+
+.footit {
+    font-size: larger;
+    font-weight: normal;
+    color: white;
+}
+.head {
+    display: flex;
+    background: #333;
+}
+.head *{
+    color: white;
+}
+.head>div:first-child {
+    width: 72%;
+    display: flex;
+}
+
+.men {
+    width: 83%;
+    z-index: 6;
+    display: flex;
+    min-height: 50px;
+}
+
+#lg {
+    width: 17%;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+#mentuc {
+    display: none;
+}
+
+#lg a img {
+    width: 100%;
+    height: auto;
+}
+
+.men li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    padding: 0vw 1vw;
+    white-space: nowrap;
+}
+
+.men li li a {
+    line-height: 2.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.men li a:hover {
+    background-color: #111;
+}
+
+
+.men li {
+    overflow: hidden;
+    position: relative;
+}
+
+#men * {
+    font-family: serif;
+}
+
+.men li li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 100%;
+}
+
+
+
+/* .men li a:hover:after {
+    transition: transform  .12s;
+   transform: rotateZ(-90deg);
+} */
+
+
+
+
+
+
+.men li > a:after {
+    color: #757575;
+    content: '▾';
+    margin-left: 2px;
+    font-size: larger;
+}
+.men li > a:only-child:after {
+    content: '';
+}
+
+#cat {
+    /* -webkit-appearance: none; */
+    border-left: 1px solid #333 !important;
+}
+
+#for {
+    width: 28%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 55px;
+    justify-content: center;
+}
+
+#for>form * {
+    outline: none;
+    border: none;
+}
+
+#submit {
+    background: url(/wp-content/themes/Vinb%20Dester/lib/images/src1.svg)  center no-repeat;
+    width: 25%;
+    cursor: pointer;
+    height: 100%;
+    background-size: 39%;
+}
+
+#for>form {
+    height: 65%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.39);
+    border-radius: 65px;
+    overflow: hidden;
+    position: relative;
+}
+
+#srin {
+    width: 100%;
+    padding-left: 5%;
+    background: none;
+    height: 100%;
+}
+
+
+.men,
+.men ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.men li>ul {
+    background-color: #333333;
+    position: absolute;
+    min-width: 100%;
+}
+
+#lg a {
+    margin: 0 20% 0 20%;
+}
+
+@media screen and (min-width: 1000px) {
+    .men li:hover {
+        overflow: visible !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navig {
+        width: 0%;
+    }
+
+    .navigg {
+        width: 100%;
+    }
+
+    .head {
+        flex-flow: wrap;
+    }
+
+    #for {
+        width: 100%;
+        justify-content: center;
+        margin: 1% 0;
+    }
+
+    #for>form {
+        width: 86%;
+        height: 92%;
+    }
+
+    .head>div:first-child {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        margin: 1% 0;
+    }
+
+    #mentuc {
+        position: absolute;
+        top: 0;
+        right: 3%;
+        display: block;
+        height: 5vw;
+        cursor: pointer;
+        width: 5vw;
+    }
+
+
+    #lg {
+        width: 33%;
+    }
+
+    .men li a {
+        line-height: 2.5em;
+    }
+
+    .men {
+        position: absolute;
+        right: 0;
+        background: rgba(0, 0, 0, 0.85);
+        height: auto;
+        display: list-item;
+        transition: min-width 1s,width 1s;
+        min-height: 90vh;
+    }
+
+    #submit {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        width: 5%;
+        left: 2%;
+        top: 0;
+        box-sizing: border-box;
+        display: block;
+        background-size: 80%;
+    }
+
+    #srin {
+        margin-left: 3%;
+        height: 100%;
+    }
+
+}
+.mintitl {
+    background: #e73737;
+    padding: 0 .5em;
+    display: inline-block;
+    line-height: 1.5em;
+    color: white;
+    font-weight: normal;
+    margin: 15px 0;
+}
+.mintitl:after{
+    content:'';
+    width: 100%;
+    background: #e73737;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+body{
+    background: #1b1b1b;
+}
+.post {
+    width: 100%;
+    
+    padding: 3% 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.post * {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vpost {
+    width: 18.8%;
+    padding-right: 1.5%;
+    /* box-sizing: border-box; */
+}
+
+
+
+.vpost:nth-child(5n) {
+    padding: 0;
+}
+
+.post .b {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.post .m {
+    width: 100%;
+    text-align: center;
+    color: #ff77c7;
+    font-weight: bold;
+    border: 1px solid #ff77c7;
+    padding: 1.5% 0;
+    cursor: pointer;
+    border-left: 0;
+    border-right: 0;
+    margin: 3% 0;
+}
+
+.post .t {
+    width: 100%;
+    font-size: 2.5em;
+    margin: 2%;
+    color: #ff77c7;
+}
+
+
+.post>img {
+    width: 33%;
+}
+
+img {
+    width: 100%;
+}
+
+.vpost a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.vpost>:last-child {
+    margin: 5% 0;
+}
+
+.vpost a:hover {
+    text-decoration: underline;
+}
+
+
+.vpost>a:first-child:before {
+    content: "";
+    background: #000000 url(/wp-content/themes/Vinb%20Dester/lib/post1/play/10.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    top: 0;
+}
+
+.vpost>a:first-child:hover:before {
+    opacity: .6;
+}
+
+
+
+
+/* categoria */
+
+.catbox {
+    background: #1b1b1b;
+    padding: 3% 4%;
+}
+
+.catfunl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.catbox #vpost {
+    width: 24.25%;
+}
+
+.catbox * {
+    color: white;
+}
+
+/* ............... */
+/* pagination */
+.paginationcl {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.paginationcl>a,
+.paginationcl>span {
+    padding: 10px 12px;
+    border: 1px solid #ff77c7;
+    border-left: none;
+    cursor: pointer;
+
+}
+
+.paginationcl>span {
+    cursor: default;
+}
+
+.paginationcl>a:hover {
+    background: #676767;
+}
+
+.paginationcl>:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-left: 1px solid #ff77c7;
+    color: #ff77c7;
+}
+
+.paginationcl>a:not(:last-child):not(:first-child) {
+    font-size: small;
+}
+
+.paginationcl>:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #ff77c7;
+}
+
+.paginationcl .active {
+    background: #ff77c7 !important;
+    color: black;
+}
+
+/* ............... */
+
+
+@media screen and (max-width:1250px) {
+    .vpost {
+        width: 23.875%;
+        padding-right: 1.5% !important;
+    }
+
+    .vpost:nth-child(4n) {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .vpost {
+        width: 49.25%;
+        padding-right: 1.5% !important;
+    }
+
+    .vpost:nth-child(2n) {
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .vpost {
+        width: 100%;
+        padding: 0 !important;
+    }
+}
+.singpost{
+    width: 100%;
+    padding: 5% 5%;
+    display: flex;
+    box-sizing: border-box;
+}
+.pos {
+    width: 66%;
+    padding-right: 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+#pdat {
+    width: 34%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.viewdat {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    padding: 0 1%;
+}
+
+.viewdat>:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewdat svg{
+    fill: #999999;
+    width: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+/* comments */
+
+.commautor {
+    display: flex;
+    align-items: end;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.commautor img {
+    margin-right: .5em;
+}
+
+.vboodata img,
+.commautor img {
+    border-radius: 50%;
+    width: 3em;
+}
+
+.post_comments {
+    list-style-type: none;
+}
+
+.post_comments li {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding: 0;
+}
+
+.post_comments li img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.commautor .comm {
+    white-space: pre-wrap;
+    margin: 3px 0;
+}
+
+.commautor .nm {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.commautor .ago {
+    font-size: small;
+    font-weight: bold;
+    color: rgba(127, 127, 127, 0.65);
+    margin-left: 10px;
+}
+
+.commautor .rep {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(127, 127, 127, 0.65);
+    display: inline-block;
+}
+
+.commautor .secom {
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-radius: 1px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    background: rgba(255, 255, 255, 0.11);
+    font-weight: bold;
+}
+
+.commautor .secom:hover {
+    box-shadow: 0px 1px 5px rgba(34, 34, 34, 0.25);
+}
+
+.commautor .txt {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+    border-radius: 2px;
+    margin: 0px;
+    width: 100%;
+    height: 120px;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.commautor .commform {
+    width: 100%;
+    margin: 15px 0 0 3.5em;
+}
+
+.commautor .commform>div {
+    width: 65%;
+}
+
+.commautor>.comtop {
+    width: 100%;
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 800px) {
+    .commautor>.comtop {
+        margin: 0;
+    }
+}
+
+.commautor>.comtop .txt {
+    height: 50px;
+    transition: all .35s ease-in-out;
+    padding: 1%;
+}
+
+.commautor>.comtop .txt:focus {
+    height: 140px;
+    padding: 2%;
+}
+
+/* .................. */
+
+/* password form */
+.singpost form>:last-child {
+    display: flex;
+}
+
+.singpost form>:last-child *:not(label) {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+}
+
+.singpost form input[type=submit] {
+    border-left: 0;
+    cursor: pointer;
+}
+
+/* .......... */
+.singvideo {
+    padding: 1.4% 2%;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.videobook {
+    width: 100%;
+}
+
+.vidcom {
+    width: 100%;
+}
+
+.singvideo>:first-child {
+    width: 75%;
+}
+
+
+
+.singvideo_last {
+    width: 25%;
+    padding-left: 2%;
+    box-sizing: border-box;
+    float: right;
+}
+
+.lefpos>:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    position: relative;
+    width: 100%;
+}
+
+.lefpos>.name {
+    text-decoration: none;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.lefpos {
+    width: 100%;
+}
+
+
+
+.vidcom ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 3em;
+}
+
+.lefpos>.data>:nth-last-child(-n+2) {
+    float: right;
+}
+
+.lefpos>.data p {
+    margin: .5em;
+    font-size: small;
+    color: #848484;
+    float: left;
+}
+
+.lefpos img {
+    width: 100%;
+}
+
+.bokvideo>* {
+    width: 100%;
+}
+
+.lefpos>a:first-child:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.64) url(/wp-content/themes/Vinb%20Dester/lib/post1/play/10.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    top: 0;
+}
+
+.lefpos>a:first-child:hover:before {
+    opacity: .9;
+}
+
+.reiting_bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.25);
+}
+
+.vboodata {
+    display: flex;
+}
+
+.vboodata span {
+    font-size: larger;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.vboodata>:first-child {
+    padding: .25em 1em 0 0;
+}
+
+
+
+.bookdate {
+    white-space: pre-wrap;
+    line-height: 1.2em;
+    height: 4.8em;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.bookdate a:hover {
+    text-decoration: underline;
+}
+
+.dateshow {
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: .5em;
+}
+
+.bookdate a {
+    text-decoration: none;
+    color: #2424ff;
+}
+
+
+.reitling_last {
+    margin-left: auto;
+    display: flex;
+    padding: .5%;
+    box-sizing: border-box;
+}
+
+.reiting_bar span {
+    padding-left: .5em;
+    /* font-size: medium; */
+    /* font-weight: bold; */
+}
+
+.reitling_last>button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    margin: .3em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reitling_last>.active {}
+
+.reitling_last>.active>svg {
+    fill: rgba(127, 127, 127) !important;
+}
+
+/* 
+.reitling_last>:first-child:before {
+    content:url('/wp-content/themes/Vinb%20Dester/lib/like.svg');
+    width: 100%;
+    min-width: 2em;
+    -webkit-text-fill-color: azure;
+}
+
+.reitling_last>:last-child:before {
+    content:url('/wp-content/themes/Vinb%20Dester/lib/dislike.svg');
+    width: 100%;
+    min-width: 2em;
+} */
+
+.reitling_last svg {
+    width: 4em;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .singvideo>:first-child {
+        width: 100%;
+    }
+
+    .singvideo_last {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .lefpos {
+        width: 32%;
+    }
+
+    .singvideo_last>:nth-child(3n+2) {
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .singvideo_last>* {
+        padding: 0 !important;
+    }
+
+    .singvideo_last>:nth-child(2n+1) {
+        padding: 0 2% 0 0 !important;
+    }
+
+    .lefpos {
+        width: 49%;
+    }
+}
+
+
+.activeshow {
+    height: auto;
+}
+
+
+
+/* comments */
+
+.commautor {
+    display: flex;
+    align-items: end;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.commautor img {
+    margin-right: .5em;
+}
+
+.vboodata img,
+.commautor img {
+    border-radius: 50%;
+    width: 3em;
+}
+
+.post_comments {
+    list-style-type: none;
+}
+
+.post_comments li {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding: 0;
+}
+
+.post_comments li img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.commautor .comm {
+    white-space: pre-wrap;
+    margin: 3px 0;
+}
+
+.commautor .nm {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.commautor .ago {
+    font-size: small;
+    font-weight: bold;
+    color: rgba(127, 127, 127, 0.65);
+    margin-left: 10px;
+}
+
+.commautor .rep {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(127, 127, 127, 0.65);
+    display: inline-block;
+}
+
+.commautor .secom {
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-radius: 1px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    background: rgba(255, 255, 255, 0.11);
+    font-weight: bold;
+}
+
+.commautor .secom:hover {
+    box-shadow: 0px 1px 5px rgba(34, 34, 34, 0.25);
+}
+
+.commautor .txt {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+    border-radius: 2px;
+    margin: 0px;
+    width: 100%;
+    height: 120px;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.commautor .commform {
+    width: 100%;
+    margin: 15px 0 0 3.5em;
+}
+
+.commautor .commform>div {
+    width: 65%;
+}
+
+.commautor>.comtop {
+    width: 100%;
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 800px) {
+    .commautor>.comtop {
+        margin: 0;
+    }
+}
+
+.commautor>.comtop .txt {
+    height: 50px;
+    transition: all .35s ease-in-out;
+    padding: 1%;
+}
+
+.commautor>.comtop .txt:focus {
+    height: 140px;
+    padding: 2%;
+}
+
+/* .................. */
+
+/* password form */
+.bokvideo form>:last-child {
+    display: flex;
+}
+
+.bokvideo form>:last-child *:not(label) {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+}
+
+.bokvideo form input[type=submit] {
+    border-left: 0;
+    cursor: pointer;
+}
+
+/* .......... */
+.slid {
+    height: 35vw;
+    overflow: hidden;
+    position: relative;
+}
+.slid:before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, .7) 16%, rgba(0, 0, 0, .25) 40%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .25) 60%, rgba(0, 0, 0, .7) 84%, rgba(0, 0, 0, 1) 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slid>.s {
+    height: 100%;
+    display: flex;
+  position:absolute;
+  left:0;
+    width: 100%;
+    transition: left .6s ease-in-out;
+}
+
+.slid>:last-child {
+    width: 100%;
+    padding: 0 10% 2%;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    z-index: 2;
+}
+
+.boxn img {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.boxn a {
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.boxn>span {
+    color: white;
+    padding-left: 10%;
+    font-size: xx-large;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+}
+
+.boxn {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    min-width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+}
+
+.search>input[name="s"] {
+    width: 100%;
+    border-radius: 2px;
+    background: rgba(127, 127, 127, 0.4);
+    padding-left: 1%;
+    min-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.search>:last-child {
+    padding: 1.8%;
+    cursor: pointer;
+    background: url(/wp-content/themes/Vinb%20Dester/lib/images/sl3.svg) center no-repeat;
+    background-size: 65%;
+}
+
+.search> * {
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+.slcou {
+    display: flex;
+    /* float: right; */
+    justify-content: flex-end;
+    margin-bottom: 1.5%;
+}
+
+.slcou>* {
+    padding: 6px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: all .6s ease-in-out;
+}
+.slcou>:first-child{
+    opacity: 1;
+}
+
+.slid #slf{
+    left: 0;
+    right: auto !important;
+}
+.slid #sri,.slid #slf{
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    right: 0;
+    padding: 10% 3%;
+    box-sizing: border-box;
+}
+.slid svg{
+   height: 100%;
+   max-width: 100px;
+   cursor: pointer;
+   fill: rgba(127, 127, 127, 0.15);
+   transition: fill .35s ease-in-out;
+}
+.slid:hover svg{
+    fill: rgba(127, 127, 127, 0.4);
+ }
+.pdat {
+    width: 34%;
+    position: relative;
+    margin: 0;
+    /* list-style-type: none; */
+    padding: 0
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#wp-calendar {
+    width: 85%;
+    padding: 5% 15% 0 15%;
+}
+
+#wp-calendar a {
+    font-weight: bold;
+}
+
+.widthbox a:hover {
+    text-decoration: underline;
+}
+
+.widthbox li {
+    padding-bottom: .5em;
+}
+.widthbox>#searchform>div{
+display: flex;
+}
+.widthbox>#searchform label{
+    display: none;
+}
+.widthbox>#searchform input{
+    border: 0;
+}
+.widthbox>#searchform input[name="s"]{
+    width: 100%;
+    padding: 2.5%;
+    box-sizing: border-box;
+}
+.widthbox>#searchform{
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 2px;
+    margin: 0 10%;
+    margin-left: 5%;
+}
+.widthbox .recentcomments{
+    font-size: small;
+}
+.widthbox .recentcomments a{
+    font-size: small;
+    font-weight: bold;
+}
+.widthbox video{
+    width: 100%;
+}

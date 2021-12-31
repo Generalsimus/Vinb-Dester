@@ -1,0 +1,15 @@
+
+
+#conform>input[type=range] {
+    -webkit-appearance: none;
+    width: 20vw;
+    height: 7px;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+}
+
+#conform label {
+    line-height: 3;
+    color: white;
+}

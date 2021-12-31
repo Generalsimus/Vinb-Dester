@@ -1,0 +1,368 @@
+.singvideo {
+    padding: 1.4% 2%;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.videobook {
+    width: 100%;
+}
+
+.vidcom {
+    width: 100%;
+}
+
+.singvideo>:first-child {
+    width: 75%;
+}
+
+
+
+.singvideo_last {
+    width: 25%;
+    padding-left: 2%;
+    box-sizing: border-box;
+    float: right;
+}
+
+.lefpos>:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    position: relative;
+    width: 100%;
+}
+
+.lefpos>.name {
+    text-decoration: none;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.lefpos {
+    width: 100%;
+}
+
+
+
+.vidcom ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 3em;
+}
+
+.lefpos>.data>:nth-last-child(-n+2) {
+    float: right;
+}
+
+.lefpos>.data p {
+    margin: .5em;
+    font-size: small;
+    color: #848484;
+    float: left;
+}
+
+.lefpos img {
+    width: 100%;
+}
+
+.bokvideo>* {
+    width: 100%;
+}
+
+.lefpos>a:first-child:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.64) url(/wp-content/themes/Vinb%20Dester/lib/post1/play/10.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    top: 0;
+}
+
+.lefpos>a:first-child:hover:before {
+    opacity: .9;
+}
+
+.reiting_bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.25);
+}
+
+.vboodata {
+    display: flex;
+}
+
+.vboodata span {
+    font-size: larger;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.vboodata>:first-child {
+    padding: .25em 1em 0 0;
+}
+
+
+
+.bookdate {
+    white-space: pre-wrap;
+    line-height: 1.2em;
+    height: 4.8em;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.bookdate a:hover {
+    text-decoration: underline;
+}
+
+.dateshow {
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: .5em;
+}
+
+.bookdate a {
+    text-decoration: none;
+    color: #2424ff;
+}
+
+
+.reitling_last {
+    margin-left: auto;
+    display: flex;
+    padding: .5%;
+    box-sizing: border-box;
+}
+
+.reiting_bar span {
+    padding-left: .5em;
+    /* font-size: medium; */
+    /* font-weight: bold; */
+}
+
+.reitling_last>button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    margin: .3em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reitling_last>.active {}
+
+.reitling_last>.active>svg {
+    fill: rgba(127, 127, 127) !important;
+}
+
+/* 
+.reitling_last>:first-child:before {
+    content:url('/wp-content/themes/Vinb%20Dester/lib/like.svg');
+    width: 100%;
+    min-width: 2em;
+    -webkit-text-fill-color: azure;
+}
+
+.reitling_last>:last-child:before {
+    content:url('/wp-content/themes/Vinb%20Dester/lib/dislike.svg');
+    width: 100%;
+    min-width: 2em;
+} */
+
+.reitling_last svg {
+    width: 4em;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .singvideo>:first-child {
+        width: 100%;
+    }
+
+    .singvideo_last {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .lefpos {
+        width: 32%;
+    }
+
+    .singvideo_last>:nth-child(3n+2) {
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .singvideo_last>* {
+        padding: 0 !important;
+    }
+
+    .singvideo_last>:nth-child(2n+1) {
+        padding: 0 2% 0 0 !important;
+    }
+
+    .lefpos {
+        width: 49%;
+    }
+}
+
+
+.activeshow {
+    height: auto;
+}
+
+
+
+/* comments */
+
+.commautor {
+    display: flex;
+    align-items: end;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.commautor img {
+    margin-right: .5em;
+}
+
+.vboodata img,
+.commautor img {
+    border-radius: 50%;
+    width: 3em;
+}
+
+.post_comments {
+    list-style-type: none;
+}
+
+.post_comments li {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding: 0;
+}
+
+.post_comments li img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.commautor .comm {
+    white-space: pre-wrap;
+    margin: 3px 0;
+}
+
+.commautor .nm {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.commautor .ago {
+    font-size: small;
+    font-weight: bold;
+    color: rgba(127, 127, 127, 0.65);
+    margin-left: 10px;
+}
+
+.commautor .rep {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(127, 127, 127, 0.65);
+    display: inline-block;
+}
+
+.commautor .secom {
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-radius: 1px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    background: rgba(255, 255, 255, 0.11);
+    font-weight: bold;
+}
+
+.commautor .secom:hover {
+    box-shadow: 0px 1px 5px rgba(34, 34, 34, 0.25);
+}
+
+.commautor .txt {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+    border-radius: 2px;
+    margin: 0px;
+    width: 100%;
+    height: 120px;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.commautor .commform {
+    width: 100%;
+    margin: 15px 0 0 3.5em;
+}
+
+.commautor .commform>div {
+    width: 65%;
+}
+
+.commautor>.comtop {
+    width: 100%;
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 800px) {
+    .commautor>.comtop {
+        margin: 0;
+    }
+}
+
+.commautor>.comtop .txt {
+    height: 50px;
+    transition: all .35s ease-in-out;
+    padding: 1%;
+}
+
+.commautor>.comtop .txt:focus {
+    height: 140px;
+    padding: 2%;
+}
+
+/* .................. */
+
+/* password form */
+.bokvideo form>:last-child {
+    display: flex;
+}
+
+.bokvideo form>:last-child *:not(label) {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+}
+
+.bokvideo form input[type=submit] {
+    border-left: 0;
+    cursor: pointer;
+}
+
+/* .......... */

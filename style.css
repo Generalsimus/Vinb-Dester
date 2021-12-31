@@ -1,0 +1,605 @@
+ /* 
+    Theme Name: 	Dester
+    Description: 	Premium WordPress template, clean and easy to use. 
+    Version: 1.0
+    Author: 		zigzi6  
+    */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+   
+   
+    #tool {
+      width: 20vw;
+      min-width: 200px;
+      height: 100vh;
+      background: #c1c1c1;
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+   
+    #site {
+   
+      position: relative;
+      width: 100%;
+    }
+   
+   
+    #site>* {
+      transition: all .2s ease-in-out;
+    }
+   
+   
+    #tooltable {
+      position: fixed;
+      width: 45%;
+      min-width: 325px;
+      background: rgba(42, 42, 42, 0.99);
+      top: 10%;
+      z-index: 2147483648;
+      /* padding: 0% 0.5% 0.5% 0.5%; */
+      border-radius: 3px;
+      display: none;
+      /* left: 1%; */
+      right: auto;
+      /* bottom: 1%; */
+    }
+   
+    #tooltable .neresize *,
+    #tooltable>div:first-child>span * {
+      pointer-events: none;
+    }
+   
+    #tooltable .neresize {
+      min-width: 1px;
+      min-height: 1px;
+      cursor: ne-resize;
+      -webkit-user-drag: none;
+      display: flex;
+      align-self: flex-end;
+    }
+   
+    #tooltable>.btt button {
+      cursor: pointer;
+      background: #777272;
+      border: 0;
+      border-radius: 2px;
+      color: lavenderblush;
+      width: 75px;
+      height: 100%;
+    }
+   
+    #tooltable>.btt {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 25px;
+      box-sizing: border-box;
+      margin: 7px 0;
+      padding: 0 7px;
+    }
+   
+    #tooltable>p {
+      float: right;
+      padding: 0.8% 3% 0.8% 3%;
+      margin-top: 1%;
+      color: red;
+      font-family: monospace;
+      font-size: small;
+    }
+   
+   
+   
+    #tooltable>div:first-child {
+      display: flex;
+      width: 100%;
+      padding: 7px;
+      box-sizing: border-box;
+    }
+   
+    #sourc {
+      display: flex;
+      background: #0a100a;
+    }
+   
+    #sourc {
+      position: relative;
+      min-height: 350px;
+    }
+   
+    #sourc>:first-child {
+      display: block;
+    }
+   
+    #sourc>* {
+      width: 100%;
+      margin: 0;
+      display: none;
+      color: white;
+      position: relative;
+      /* height: 100%; */
+    }
+   
+    #sourc>#option {
+      padding: 3% 3% 0% 3%;
+      background: rgba(249, 238, 238, 0.18);
+    }
+   
+    #conform>input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #696d6a;
+      cursor: pointer;
+    }
+   
+   
+    #tooltable>div:first-child>span {
+      cursor: pointer;
+      margin: 0 0 auto auto;
+    }
+   
+    #htmbar {
+      display: flex;
+      width: 80%;
+      position: relative;
+      align-items: center;
+    }
+   
+    #htmbar>* {
+      color: azure;
+    }
+   
+   
+   
+    #tooltable>div:last-child>textarea {
+      resize: none;
+      width: 100%;
+      border: 1px solid #ffffff;
+      outline: none;
+      background: #afafaf;
+      height: 61%;
+    }
+   
+    #htmbar>span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 7px;
+      cursor: pointer;
+      border: 1px solid #4e5d4e;
+      border-radius: 2px;
+      width: 100%;
+      text-align: center;
+      height: 65%;
+      min-height: 30px;
+      max-height: 50px;
+    }
+   
+    #htmbar>span:hover {
+      background: #2e442e;
+    }
+   
+    #tbutton {
+      width: 100%;
+      padding: 5% 70% 5% 0%;
+      cursor: pointer;
+    }
+   
+    #tbutton2 {
+      -webkit-appearance: button;
+      padding: 5% 0% 5% 10%;
+      cursor: pointer;
+    }
+   
+    #lab {
+      float: right;
+      margin-right: 10%;
+    }
+   
+    .tob>span {
+      cursor: pointer;
+      padding: 0 5px;
+      height: auto;
+    }
+   
+    .tob {
+      position: absolute;
+      right: 5%;
+      z-index: 888;
+      display: flex;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.23921568627450981);
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      align-items: center;
+      justify-content: center;
+      color: #e7eced;
+      font-weight: bold;
+      height: 2%;
+      max-height: 30px;
+      min-height: 25px;
+      min-width: 110px;
+      width: 10%;
+    }
+   
+    .tob>* {
+      height: 100%;
+      user-select: none;
+      width: auto;
+      user-drag: none;
+      -webkit-user-drag: none;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+   
+   
+   
+   
+   
+   
+    /* loadingggg tob is qvemot*/
+   
+    .lds-ellipsis {
+      display: inline-block !important;
+      position: relative !important;
+      width: 64px !important;
+      height: 64px !important;
+      margin: 0 0 0 50% !important;
+    }
+   
+    .lds-ellipsis div {
+      position: absolute;
+      top: 27px;
+      padding: .45em;
+      border-radius: 50%;
+      background: #61de61;
+      width: auto !important;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+   
+    .lds-ellipsis div:nth-child(1) {
+      left: 6px;
+      animation: lds-ellipsis1 0.6s infinite;
+    }
+   
+    .lds-ellipsis div:nth-child(2) {
+      left: 6px;
+      animation: lds-ellipsis2 0.6s infinite;
+    }
+   
+    .lds-ellipsis div:nth-child(3) {
+      left: 26px;
+      animation: lds-ellipsis2 0.6s infinite;
+    }
+   
+    .lds-ellipsis div:nth-child(4) {
+      left: 45px;
+      animation: lds-ellipsis3 0.6s infinite;
+    }
+   
+    @keyframes lds-ellipsis1 {
+      0% {
+        transform: scale(0);
+      }
+   
+      100% {
+        transform: scale(1);
+      }
+    }
+   
+    @keyframes lds-ellipsis3 {
+      0% {
+        transform: scale(1);
+      }
+   
+      100% {
+        transform: scale(0);
+      }
+    }
+   
+    @keyframes lds-ellipsis2 {
+      0% {
+        transform: translate(0, 0);
+      }
+   
+      100% {
+        transform: translate(19px, 0);
+      }
+    }
+   
+    /* ............ */
+   
+   
+   
+   
+    /* reqtemis optionis loading */
+   
+   
+    .optspinner {
+      position: relative;
+      margin: auto;
+      box-sizing: border-box;
+      background-clip: padding-box;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      border: 5px solid rgba(255, 255, 255, 0.1);
+      -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.1), #000000 90%);
+      transform-origin: 50% 60%;
+      transform: perspective(200px) rotateX(70deg) scale(1);
+      animation: spinner-wiggle 1.2s infinite;
+    }
+   
+    .optspinner:before,
+    .optspinner:after {
+      content: "";
+      position: absolute;
+      margin: -4px;
+      box-sizing: inherit;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      opacity: .05;
+      border: inherit;
+      border-color: transparent;
+      animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 1.2s linear infinite;
+    }
+   
+    .optspinner:before {
+      border-top-color: #66e6ff;
+    }
+   
+    .optspinner:after {
+      border-top-color: #f0db75;
+      animation-delay: 0.3s;
+    }
+   
+    @keyframes spinner-spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+   
+    @keyframes spinner-fade {
+      20% {
+        opacity: .1;
+      }
+   
+      40% {
+        opacity: 1;
+      }
+   
+      60% {
+        opacity: .1;
+      }
+    }
+   
+    /* ..................... */
+   
+   
+   
+   
+   
+   
+   
+    /* control panelis css */
+    .controlpanel {
+      position: fixed;
+      background: #19222a;
+      z-index: 999999999999;
+      top: 50%;
+      min-width: 300px;
+      min-height: 400px;
+      height: 65%;
+      transition: all .35s ease-in-out;
+      max-width: 30%;
+    }
+   
+    .controlpanel>ul>li li,
+    .controlpanel>ul>li>div {
+      padding: 0 2% 0 5%;
+    }
+   
+   
+    .controlpanel .d {
+      height: 45px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      cursor: pointer;
+    }
+   
+   
+   
+    .controlopen .d::after {
+      content: '▸';
+      margin-left: auto;
+      font-size: x-large;
+      transition: transform .35s ease-in-out;
+    }
+   
+    .controlopen .d:hover {
+      background: #020304;
+    }
+   
+    .controlopen {
+      transform: translateX(0%) translateX(0px) translateY(-50%);
+    }
+   
+    .controlhide {
+      transform: translateX(-100%) translateX(80px) translateY(-50%);
+      height: 95px;
+      min-height: 95px;
+    }
+   
+    .controlpanel ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+    }
+   
+    .controlpanel>ul {
+      height: calc(100% - 95px);
+    }
+   
+    .controlopen .c::after {
+      content: '◂';
+      font-size: 50px;
+    }
+   
+    .controlhide .c::after {
+      content: '▸';
+      font-size: 65px;
+      line-height: .5;
+    }
+   
+    .controlhide .c:hover {
+      color: #8c9195;
+    }
+   
+    .controlpanel * {
+      color: white;
+    }
+   
+    .controlpanel>:first-child>:first-child {
+      font-weight: 700;
+    }
+   
+    .controlpanel>:first-child {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #09f;
+    }
+   
+    .controlpanel .b {
+      height: 45px;
+      display: flex;
+      justify-content: flex-end;
+      padding: 1.75%;
+      box-sizing: border-box;
+    }
+   
+   
+   
+    .controlpanel .c {
+      cursor: pointer;
+      color: white;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      top: 0;
+      position: absolute;
+    }
+   
+    .controlpanel img {
+      max-height: 100%;
+      max-width: 85%;
+    }
+   
+    .controlpanel label {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      cursor: pointer;
+      padding: 2% 0;
+    }
+   
+    .controlpanel *[type=radio] {
+      position: absolute;
+      left: 0;
+    }
+   
+    .controlpanel>ul>li li:hover {
+      background: #3b434a;
+    }
+   
+    .hidenbx>:last-child {
+      /* position: absolute; */
+      /* display: none; */
+    }
+   
+    .hidenbx .d::after {
+      transform: rotate(0deg);
+   
+    }
+   
+    .openedbx .d::after {
+      transform: rotate(90deg);
+    }
+   
+    .openedbx>ul {
+      max-height: 500px;
+    }
+   
+    .controlpanel>ul ul {
+      transition: .35s ease-in-out;
+    }
+   
+    .hidenbx>ul {
+      max-height: 0px;
+    }
+   
+    .controlhide .c {
+      width: 80px;
+    }
+   
+    .controlhide .b {
+      padding: 0;
+    }
+   
+   
+    .controlpanel .b button {
+      height: 100%;
+      min-width: 80px;
+      width: 15%;
+      border: none;
+      cursor: pointer;
+      background: #0099ff;
+      white-space: nowrap;
+    }
+   
+    .controlhide .b button {
+      width: 80px;
+    }
+   
+    .template-save:hover,
+    .controlhide .c:hover {
+      box-shadow: 1px 1px 12px #0099ff;
+      background: #0778c5 !important;
+    }
+   
+   
+   
+    .controlpanel ul::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: none;
+    }
+   
+    .controlpanel ul::-webkit-scrollbar {
+      width: 10px;
+   
+    }
+   
+    .controlpanel ul::-webkit-scrollbar-thumb {
+      border-radius: 999px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: #2c4658;
+    }
+   
+   
+    /* .................. */

@@ -1,0 +1,31 @@
+{
+    "function": "functions1",
+    "imagetumb": [
+        [
+            "array('width' => 288,'height' => 192,'crop' =>true)",
+            "posttum"
+        ]
+    ],    
+    "funop": {
+        "if": [
+            [
+                "isset($_GET['v'])",
+                "       "
+            ],
+            [
+                "isset($_GET['v'])",
+                "  "
+            ]
+        ],
+        "fun": [
+            [
+                "pre_get_posts",
+                "if(($query->is_archive() || $query->is_search()) && $query->is_main_query()){$query->set( 'posts_per_page', '40' );$query->set( 'paged', (isset($_GET['page']) && Is_Numeric($_GET['page']))? $_GET['page'] : 1 );if(isset($_GET['orderby'])){unset($query->query['s']);unset($query->query_vars['s']);if($_GET['orderby']=='most_view'){$query->set('orderby', 'meta_value_num');$query->set('meta_key', 'post_views_count');}}}",
+                [
+                    "$query",
+                    0
+                ]
+            ]
+        ]
+    }
+}

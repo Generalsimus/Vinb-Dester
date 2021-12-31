@@ -1,0 +1,12 @@
+{"funop": {
+        "if": [
+            [
+                "isset($_GET['singvideoreiting'])",
+                "include_once 'savelib/singvideoreiting.php';exit;"
+            ]        
+        ],
+        "fun": [
+            
+        ]
+    }
+}

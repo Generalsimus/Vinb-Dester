@@ -1,0 +1,239 @@
+.head {
+    display: flex;
+    background: #333;
+}
+.head *{
+    color: white;
+}
+.head>div:first-child {
+    width: 72%;
+    display: flex;
+}
+
+.men {
+    width: 83%;
+    z-index: 6;
+    display: flex;
+    min-height: 50px;
+}
+
+#lg {
+    width: 17%;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+#mentuc {
+    display: none;
+}
+
+#lg a img {
+    width: 100%;
+    height: auto;
+}
+
+.men li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    padding: 0vw 1vw;
+    white-space: nowrap;
+}
+
+.men li li a {
+    line-height: 2.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.men li a:hover {
+    background-color: #111;
+}
+
+
+.men li {
+    overflow: hidden;
+    position: relative;
+}
+
+#men * {
+    font-family: serif;
+}
+
+.men li li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 100%;
+}
+
+
+
+/* .men li a:hover:after {
+    transition: transform  .12s;
+   transform: rotateZ(-90deg);
+} */
+
+
+
+
+
+
+.men li > a:after {
+    color: #757575;
+    content: '▾';
+    margin-left: 2px;
+    font-size: larger;
+}
+.men li > a:only-child:after {
+    content: '';
+}
+
+#cat {
+    /* -webkit-appearance: none; */
+    border-left: 1px solid #333 !important;
+}
+
+#for {
+    width: 28%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 55px;
+    justify-content: center;
+}
+
+#for>form * {
+    outline: none;
+    border: none;
+}
+
+#submit {
+    background: url(/wp-content/themes/Vinb%20Dester/lib/images/src1.svg)  center no-repeat;
+    width: 25%;
+    cursor: pointer;
+    height: 100%;
+    background-size: 39%;
+}
+
+#for>form {
+    height: 65%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.39);
+    border-radius: 65px;
+    overflow: hidden;
+    position: relative;
+}
+
+#srin {
+    width: 100%;
+    padding-left: 5%;
+    background: none;
+    height: 100%;
+}
+
+
+.men,
+.men ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.men li>ul {
+    background-color: #333333;
+    position: absolute;
+    min-width: 100%;
+}
+
+#lg a {
+    margin: 0 20% 0 20%;
+}
+
+@media screen and (min-width: 1000px) {
+    .men li:hover {
+        overflow: visible !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navig {
+        width: 0%;
+    }
+
+    .navigg {
+        width: 100%;
+    }
+
+    .head {
+        flex-flow: wrap;
+    }
+
+    #for {
+        width: 100%;
+        justify-content: center;
+        margin: 1% 0;
+    }
+
+    #for>form {
+        width: 86%;
+        height: 92%;
+    }
+
+    .head>div:first-child {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        margin: 1% 0;
+    }
+
+    #mentuc {
+        position: absolute;
+        top: 0;
+        right: 3%;
+        display: block;
+        height: 5vw;
+        cursor: pointer;
+        width: 5vw;
+    }
+
+
+    #lg {
+        width: 33%;
+    }
+
+    .men li a {
+        line-height: 2.5em;
+    }
+
+    .men {
+        position: absolute;
+        right: 0;
+        background: rgba(0, 0, 0, 0.85);
+        height: auto;
+        display: list-item;
+        transition: min-width 1s,width 1s;
+        min-height: 90vh;
+    }
+
+    #submit {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        width: 5%;
+        left: 2%;
+        top: 0;
+        box-sizing: border-box;
+        display: block;
+        background-size: 80%;
+    }
+
+    #srin {
+        margin-left: 3%;
+        height: 100%;
+    }
+
+}

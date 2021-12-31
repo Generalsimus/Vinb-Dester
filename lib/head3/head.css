@@ -1,0 +1,252 @@
+#lg {
+    width: 15%;
+    position: relative;
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+
+#lg a {
+    display: contents;
+}
+
+#lg a>img {
+    width: 50%;
+    margin: 0 20% 0 30%;
+    height: auto;
+}
+
+.head {
+    display: flex;
+    border-bottom: 3px solid #ececec;
+    box-shadow: 0 5px 23px 0px #c3c3c3;
+    z-index: 255;
+    position: relative;
+    background: white;
+}
+
+.head>div:last-child {
+    width: 85%;
+}
+
+.men {
+    display: flex;
+    width: 80%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+
+.men li {
+    overflow: hidden;
+    position: relative;
+}
+
+.men li:hover {
+    overflow: visible;
+}
+
+.men ul {
+    position: absolute;
+    background: white;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#men li {
+    list-style-type: none;
+}
+
+#men li li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+
+
+#men>li>a {
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+
+.men>li>a{
+    padding: 0 10px;
+}
+
+#men>li a:hover {
+    color: #7b7b7b;
+}
+
+#men li a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: serif;
+    color: #b3b3b3;
+}
+
+#men ul a {
+    padding: 0% 1em 0% 1em;
+    line-height: 2.7em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#for {
+    float: right;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#for form :last-child {
+    background-image: url("/wp-content/themes/Vinb%20Dester/lib/images/svgf.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
+    background-size: 70%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 23%;
+    margin-right: 2%;
+}
+
+#for form * {
+    border: none;
+    outline: none;
+}
+
+#srin {
+    width: 75%;
+    border-right: 1px solid #d0d6db !important;
+    background: rgba(0, 0, 0, 0);
+    padding: 5% 0 5% 12%;
+    box-sizing: border-box;
+}
+
+#for>form {
+    display: flex;
+    border: 1px solid #d0d6db;
+    border-radius: 500px;
+    width: 90%;
+    overflow: hidden;
+    vertical-align: middle;
+    /* margin: 4% 0%; */
+}
+
+.men>li>a::before {    
+    margin-right: 1vw;
+}
+.men>li:last-child::after{
+    right:0;
+}
+.men>li::before,.men>li:last-child::after{
+    content: '';
+    width: 1px;
+    height: 60%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25) 33.33%, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+    position: absolute;
+    top: 20%;
+}
+
+.men li > a:after {
+    color: #757575;
+    content: ' ▾';
+    margin-left: 2px;
+    font-size: larger;
+}
+.men li > a:only-child:after {
+    content: '';
+}
+
+
+@media only screen and (max-width:  600px){
+    #for {
+        width: 37vw;
+    }
+}
+@media only screen and (max-width:  900px) {
+    .head {
+        display: block;
+
+    }
+
+    #men>li a:hover {
+        background: #dedede;
+    }
+
+    #lg a>img {
+        width: 15%;
+        margin: 0;
+    }
+
+    #lg {
+        width: 100%;
+        text-align: center;
+        padding-top: 1%;
+        display: block;
+    }
+
+    .head>div:last-child {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .men {
+        display: list-item;
+        position: absolute;
+        background: white;
+        overflow: hidden;
+        min-width: 60vw;
+        height: auto;
+        transform-origin: 1vw top;
+        min-height: 100vh;
+    }
+
+    .menanim {
+        transform: translate3d(0%,0,0);
+    }
+
+    .menanimh {
+        transform: translate3d(-100%,0,0);
+    }
+
+    #msv {
+        background: url("/wp-content/themes/Vinb%20Dester/lib/images/menu.svg") no-repeat;
+        background-size: 100%;
+        margin-left: 1vw;
+        display: inline-block;
+        cursor: pointer;
+        width: 2em;
+        height: 2.5em;
+    }
+
+    #men>li>a {
+        line-height: 2em;
+    }
+
+    #men li li {
+        display: block;
+    }
+
+    .men ul {
+        margin-left: 5%;
+    }
+
+    #for {
+        width: 30vw;
+    }
+
+    #for>form {
+        margin-top: auto;
+    }
+
+}
+

@@ -1,0 +1,503 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto');
+/* @import url('https://fonts.googleapis.com/css?family=Lato'); */
+/* @import url('https://fonts.googleapis.com/css?family=Lato:400,400i'); */
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+
+.twopos {
+    overflow: hidden;
+}
+
+.twopos #vpost {
+    width: 49%;
+    padding: 0;
+}
+
+.twopos>div {
+    display: flex;
+    width: 200%;
+    transition: margin-left .6s ease-in-out;
+}
+
+.twopos>div>div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bpost>a:first-child {
+    width: 40%;
+}
+
+#blogpos {
+    overflow: hidden;
+}
+
+#blogpos>div {
+    display: flex;
+    transition: margin-left .6s ease-in-out;
+    width: 200%;
+}
+
+#blogpos>div>div {
+    width: 100%;
+    position: relative;
+}
+
+#bpost {
+    display: flex;
+    margin-bottom: 4%;
+    position: relative;
+}
+
+#posdecr {
+    padding: 0 0 0 2%;
+    width: 58%;
+}
+
+#posdecr>p {
+    color: #888888;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+#posdecr>a:first-child {
+    
+    width: 100%;
+}
+
+#posdecr>a:first-child>h2 {
+    margin: 0;
+    color: #757575;
+    font-weight: 200;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: .5em;
+}
+
+#bpost>a:first-child>img {
+    width: 100%;
+    height: auto;
+}
+
+.spos>i {
+    padding: .48em;
+    background: #8c8c8c;
+    margin-left: 0.1em;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+    user-select: none;
+}
+
+.spos>i:first-child {
+    background: #e73737;
+}
+
+.spos {
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#lp {
+    display: flex;
+    margin: 4% 1.5% 2% 1.5%;
+    position: relative;
+    align-items: center;
+}
+
+#laspo>div {
+    display: flex;
+    width: 200%;
+    /* overflow: hidden; */
+    transition: margin-left .6s ease-in-out;
+}
+
+#laspo {
+    overflow: hidden;
+}
+
+#laspo>div>div {
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
+    width: 100%;
+}
+
+#lp>h2 {
+    margin: 0;
+    color: black;
+    font-family: initial;
+    font-size: xx-large;
+}
+
+#lp>* {
+    /* width: 100%; */
+}
+
+
+
+
+.pos {
+    /* adjusted */
+    width: 66%;
+    padding-right: 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+#migr>div {
+    width: 49.5%;
+    padding: 0;
+}
+
+#migr>div:nth-child(2n+1) {
+    padding-right: 1%;
+}
+
+
+#migr {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#migr>div>a:first-child {
+    width: 100%;
+    display: grid;
+    display: -ms-grid;
+    margin-bottom: 4%;
+}
+
+#migr>div>a:last-child {
+    padding: 2px 0;
+    font-size: small;
+}
+
+#migr>div>a:first-child>img {
+    width: 100%;
+    height: auto;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.post {
+    width: 100%;
+    background:white;
+    padding: 5% 5%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.post #lp:first-child {
+    margin-top: 1.5em;
+}
+
+/* .pos>*{
+    font-family: 'Noto Serif', serif;
+} */
+#vpost {
+    width: 32.66666666666667%;
+    float: left;
+    padding-right: 1%;
+    position: relative;
+    z-index: 5;
+}
+
+.twopos #vpost:nth-child(2n+1) {
+    padding-right: 1%;
+}
+
+#vpost:nth-child(3n+0) {
+    padding: 0;
+}
+
+#lp:before {
+    content: url(/wp-content/themes/Vinb%20Dester/lib/images/ppen.svg);
+    display: inline-block;
+    width: 1.5em;
+    margin-right: 1%;
+    bottom: 0;
+}
+
+#vpost>div {
+    display: flex;
+    z-index: 9;
+    /* cursor: pointer; */
+}
+
+#vpost>a:first-child:before {
+    content: "";
+    background: #000000 url(/wp-content/themes/Vinb%20Dester/lib/post1/play/10.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    top: 0;
+}
+
+#vpost>a:first-child:hover:before {
+    opacity: .6;
+}
+
+
+#vpost>a:first-child {
+    position: relative;
+}
+
+#vpost a>img {
+    width: 100%;
+}
+
+#vpost>a>img {
+    width: 100%;
+    /* z-index: -5; */
+}
+
+#vpost>a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#vpost>a:last-child:hover {
+    text-decoration: underline;
+}
+
+#vpost>a:last-child {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: left;
+    
+    margin: 3% 0;
+    
+    font-weight: bold;
+    /* font-family: "Lato", sans-serif; */
+    /* font-size: larger; */
+}
+
+.posabout {
+    margin: 4% 5%;
+    font-size: smaller;
+}
+
+.fbsocbox {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+.widthbox{
+    position: relative;
+    margin: 1em 0;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    #vpost>a:last-child {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+
+
+    #boxp>div>span:last-child::before {
+        width: 1.8em;
+    }
+
+}
+
+@supports (-moz-appearance:none) {
+
+    #vpost>a:last-child {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -moz-binding: url('ellipsis.xml#ellipsis');
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    #bpost>a:first-child {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    #bpost {
+        display: block;
+    }
+
+    #posdecr {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .post {
+        display: block;
+    }
+
+    .pdat,
+    .pos {
+        width: 100% !important;
+    }
+    
+}
+
+
+@media screen and (max-width: 950px) {
+    .post {
+        width: 100%;
+        padding: 5% 3%;
+    }
+    .catfunl #vpost {
+        width: 32.6% !important;
+    }
+    
+    .catfunl #vpost:nth-child(4n+0) {
+        padding-right: 1% !important;
+    } 
+    .catfunl #vpost:nth-child(3n+0) {
+        padding:0 !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .catfunl #vpost {
+        width: 49% !important;
+    }
+    
+    .catfunl #vpost:nth-child(3n+0) {
+        padding-right: 1% !important;
+    } 
+    .catfunl #vpost:nth-child(2n+0) {
+        padding:0 !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .catfunl #vpost {
+        width: 100% !important;
+    }
+    
+    .catfunl #vpost:nth-child(3n+0) {
+        padding:0 !important;
+    } 
+    .catfunl #vpost:nth-child(2n+0) {
+        padding:0 !important;
+    }
+}
+
+
+.catfunl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.catbox {
+    padding: 5% 3%;
+}
+
+.catfunl #vpost {
+    width: 24.25%;
+}
+
+.catfunl #vpost:nth-child(3n+0) {
+    padding-right: 1%;
+}
+
+.catfunl #vpost:nth-child(4n+0) {
+    padding: 0;
+}
+
+.pagecon {
+    padding: 0 3%;
+}
+
+.pagecon>h1 {
+    margin: 45px 0;
+}
+
+/* pagination */
+.paginationcl {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.paginationcl>a,
+.paginationcl>span {
+    padding: 10px 12px;
+    border: 1px solid #ff6f6f;
+    border-left: none;
+    cursor: pointer;
+    
+}
+
+.paginationcl>span {
+    cursor: default;
+}
+
+.paginationcl>a:hover {
+    background: #f7d5d5;
+}
+
+.paginationcl>:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-left: 1px solid #ff6f6f;
+    color: #ff6f6f;
+}
+
+.paginationcl>a:not(:last-child):not(:first-child) {
+    font-size: small;
+}
+
+.paginationcl>:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #ff6f6f;
+}
+
+.paginationcl .active {
+    background: #ff6f6f !important;
+    color: #9c0000;
+}
+
+/* ............... */

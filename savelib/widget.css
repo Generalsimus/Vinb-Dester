@@ -1,0 +1,58 @@
+.pdat {
+    width: 34%;
+    position: relative;
+    margin: 0;
+    /* list-style-type: none; */
+    padding: 0
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#wp-calendar {
+    width: 85%;
+    padding: 5% 15% 0 15%;
+}
+
+#wp-calendar a {
+    font-weight: bold;
+}
+
+.widthbox a:hover {
+    text-decoration: underline;
+}
+
+.widthbox li {
+    padding-bottom: .5em;
+}
+.widthbox>#searchform>div{
+display: flex;
+}
+.widthbox>#searchform label{
+    display: none;
+}
+.widthbox>#searchform input{
+    border: 0;
+}
+.widthbox>#searchform input[name="s"]{
+    width: 100%;
+    padding: 2.5%;
+    box-sizing: border-box;
+}
+.widthbox>#searchform{
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 2px;
+    margin: 0 10%;
+    margin-left: 5%;
+}
+.widthbox .recentcomments{
+    font-size: small;
+}
+.widthbox .recentcomments a{
+    font-size: small;
+    font-weight: bold;
+}
+.widthbox video{
+    width: 100%;
+}

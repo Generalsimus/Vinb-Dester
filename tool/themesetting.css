@@ -1,0 +1,112 @@
+.toolbox {
+    display: flex;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.socopt>div {
+    height: 100%;
+    overflow: auto;
+}
+
+.toolst {
+    width: 22%;
+    margin: 0;
+    background: #19222a;
+}
+
+.toolst a {
+    text-decoration: none;
+    color: white;
+    padding: 1em 0 1em 10px;
+    display: flex;
+    box-shadow: none !important;
+    width: 100%;
+}
+.toolst svg{
+    height:20px;
+    fill:white;
+    padding-right: 10px;
+}
+.toolst>li {
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.toolst>li:hover:not(:first-child) {
+    background: #020304;
+}
+
+.toolpr {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    /* height: calc(100% - 35px); */
+    border: 20px solid #19222a;
+    border-left: none;
+}
+
+#wpbody-content>*:not(.toolbox) {
+    display: none;
+}
+
+.savebutton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 3% 0; */
+    box-sizing: border-box;
+}
+
+.savebutton>button {
+    border: 0;
+    background: #19222a;
+    color: white;
+    cursor: pointer;
+    min-height: 35px;
+    min-width: 65px;
+    border-radius: 2px;
+    transition: box-shadow .2s;
+}
+
+.socopt #fb-login-btn {
+    background: linear-gradient(#4c69ba, #3b55a0);
+    border-color: #4c69ba;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.savebutton>button:hover {
+    box-shadow: 0px 1px 15px rgba(34, 34, 34, 0.39);
+}
+
+.toolpr>div {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+.socopt>form>div {
+    padding: 0 5%;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    margin: 2% 0;
+}
+
+.socopt>form>div>input {
+    width: 100%;
+}
+
+.toolst>:first-child{
+    background-color: #09f;
+    padding: 1em 0 1em 15px;
+    font-size: initial;
+}

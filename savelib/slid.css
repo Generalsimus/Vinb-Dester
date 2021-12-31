@@ -1,0 +1,132 @@
+.slid {
+    height: 35vw;
+    overflow: hidden;
+    position: relative;
+}
+.slid:before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, .7) 16%, rgba(0, 0, 0, .25) 40%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .25) 60%, rgba(0, 0, 0, .7) 84%, rgba(0, 0, 0, 1) 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slid>.s {
+    height: 100%;
+    display: flex;
+  position:absolute;
+  left:0;
+    width: 100%;
+    transition: left .6s ease-in-out;
+}
+
+.slid>:last-child {
+    width: 100%;
+    padding: 0 10% 2%;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    z-index: 2;
+}
+
+.boxn img {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.boxn a {
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.boxn>span {
+    color: white;
+    padding-left: 10%;
+    font-size: xx-large;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+}
+
+.boxn {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    min-width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+}
+
+.search>input[name="s"] {
+    width: 100%;
+    border-radius: 2px;
+    background: rgba(127, 127, 127, 0.4);
+    padding-left: 1%;
+    min-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.search>:last-child {
+    padding: 1.8%;
+    cursor: pointer;
+    background: url(/wp-content/themes/Vinb%20Dester/lib/images/sl3.svg) center no-repeat;
+    background-size: 65%;
+}
+
+.search> * {
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+.slcou {
+    display: flex;
+    /* float: right; */
+    justify-content: flex-end;
+    margin-bottom: 1.5%;
+}
+
+.slcou>* {
+    padding: 6px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: all .6s ease-in-out;
+}
+.slcou>:first-child{
+    opacity: 1;
+}
+
+.slid #slf{
+    left: 0;
+    right: auto !important;
+}
+.slid #sri,.slid #slf{
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    right: 0;
+    padding: 10% 3%;
+    box-sizing: border-box;
+}
+.slid svg{
+   height: 100%;
+   max-width: 100px;
+   cursor: pointer;
+   fill: rgba(127, 127, 127, 0.15);
+   transition: fill .35s ease-in-out;
+}
+.slid:hover svg{
+    fill: rgba(127, 127, 127, 0.4);
+ }

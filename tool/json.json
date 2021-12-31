@@ -1,0 +1,55 @@
+{
+    "thumbnail": {
+        "width": "150",
+        "height": "150",
+        "crop": ""
+    },
+    "medium": {
+        "width": "300",
+        "height": "300",
+        "crop": false
+    },
+    "medium_large": {
+        "width": "768",
+        "height": "0",
+        "crop": false
+    },
+    "large": {
+        "width": "1024",
+        "height": "1024",
+        "crop": false
+    }
+}
+
+
+
+
+
+
+{
+    "width": 1920,
+    "height": 1080,
+    "file": "2019\/02\/wallpaper-photos-30.jpg",
+    "sizes": {
+        "thumbnail": {
+            "file": "wallpaper-photos-30-240x180.jpg",
+            "width": 240,
+            "height": 180,
+            "mime-type": "image\/jpeg"
+        }
+    },
+    "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": []
+    }
+}

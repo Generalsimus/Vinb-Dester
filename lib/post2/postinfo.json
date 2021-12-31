@@ -1,0 +1,27 @@
+{
+  "function": "functions1",
+  "widget": "widget1",
+  "imagetumb": [
+    [
+      "array('width' => 288,'height' => 192,'crop' =>true)",
+      "posttum"
+    ],
+    [
+      "array('width' => 360,'height' => 240,'crop' =>true)",
+      "postmed"
+    ]
+  ],
+  "funop": {
+    "fun": [
+      [
+        "pre_get_posts",
+        "if($query->is_archive() && $query->is_main_query()){$query->set( 'posts_per_page', '40' );$query->set( 'paged', (isset($_GET['page']) && Is_Numeric($_GET['page']))? $_GET['page'] : 1 );}",
+        [
+          "$query",
+          0
+        ]
+      ]
+    ]
+    
+  }
+}

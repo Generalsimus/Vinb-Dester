@@ -1,0 +1,108 @@
+.slid {
+    display: flex;
+    height: 55vw;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slid>#b img {
+    width: 100%;
+}
+
+.slid>#b h1 {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+
+.slid>#b a {
+    text-decoration: none;
+    color: white;
+}
+
+.slid>#b a:hover {
+    text-decoration: underline;
+}
+
+.slid>#b div {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.slid:hover>#sri,
+.slid:hover>#slf {
+    opacity: .7;
+}
+
+
+.slid>#b {
+    height: 100%;
+    width: 1000%;
+    transition: .6s ease-in-out;
+    display: flex;
+    flex: none;
+}
+
+.slid svg {
+    height: 100%;
+    fill: white;
+}
+
+#sri,
+#slf {
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+    height: 35px;
+    width: 35px;
+    right: 1%;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    top: calc(22vw - 35px);
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    #sri,
+    #slf {
+        transform: translateY(-50%);
+    }
+}
+
+#sri:hover,
+#slf:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
+#slf {
+    left: 1% !important;
+}
+
+.slid .l,
+.slid .r {
+    position: absolute;
+    background: white;
+    height: 25%;
+    width: 100%;
+    z-index: 5;
+    bottom: 0;
+}
+
+.slid .l {
+    transform: rotateZ(10deg);
+    transform-origin: left;
+    left: -45%;
+    bottom: 0;
+}
+
+.slid .r {
+    transform: rotateZ(-8deg);
+    transform-origin: right;
+    right: -10%;
+}

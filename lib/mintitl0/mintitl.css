@@ -1,0 +1,19 @@
+.mintitl {
+    background: #e73737;
+    padding: 0 .5em;
+    display: inline-block;
+    line-height: 1.5em;
+    color: white;
+    font-weight: normal;
+    margin: 15px 0;
+}
+.mintitl:after{
+    content:'';
+    width: 100%;
+    background: #e73737;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}

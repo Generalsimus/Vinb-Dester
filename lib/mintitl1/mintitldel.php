@@ -1,0 +1,1 @@
+<h3 class="mintitl">::replaceDesterehtml::</h3>

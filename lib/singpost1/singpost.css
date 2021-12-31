@@ -1,0 +1,175 @@
+.singpost{
+    width: 100%;
+    padding: 5% 5%;
+    display: flex;
+    box-sizing: border-box;
+}
+.pos {
+    width: 66%;
+    padding-right: 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+#pdat {
+    width: 34%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.viewdat {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    padding: 0 1%;
+}
+
+.viewdat>:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewdat svg{
+    fill: #999999;
+    width: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+/* comments */
+
+.commautor {
+    display: flex;
+    align-items: end;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.commautor img {
+    margin-right: .5em;
+}
+
+.vboodata img,
+.commautor img {
+    border-radius: 50%;
+    width: 3em;
+}
+
+.post_comments {
+    list-style-type: none;
+}
+
+.post_comments li {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding: 0;
+}
+
+.post_comments li img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.commautor .comm {
+    white-space: pre-wrap;
+    margin: 3px 0;
+}
+
+.commautor .nm {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.commautor .ago {
+    font-size: small;
+    font-weight: bold;
+    color: rgba(127, 127, 127, 0.65);
+    margin-left: 10px;
+}
+
+.commautor .rep {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(127, 127, 127, 0.65);
+    display: inline-block;
+}
+
+.commautor .secom {
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-radius: 1px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    background: rgba(255, 255, 255, 0.11);
+    font-weight: bold;
+}
+
+.commautor .secom:hover {
+    box-shadow: 0px 1px 5px rgba(34, 34, 34, 0.25);
+}
+
+.commautor .txt {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+    border-radius: 2px;
+    margin: 0px;
+    width: 100%;
+    height: 120px;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.commautor .commform {
+    width: 100%;
+    margin: 15px 0 0 3.5em;
+}
+
+.commautor .commform>div {
+    width: 65%;
+}
+
+.commautor>.comtop {
+    width: 100%;
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 800px) {
+    .commautor>.comtop {
+        margin: 0;
+    }
+}
+
+.commautor>.comtop .txt {
+    height: 50px;
+    transition: all .35s ease-in-out;
+    padding: 1%;
+}
+
+.commautor>.comtop .txt:focus {
+    height: 140px;
+    padding: 2%;
+}
+
+/* .................. */
+
+/* password form */
+.singpost form>:last-child {
+    display: flex;
+}
+
+.singpost form>:last-child *:not(label) {
+    background: none;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    outline: none;
+}
+
+.singpost form input[type=submit] {
+    border-left: 0;
+    cursor: pointer;
+}
+
+/* .......... */

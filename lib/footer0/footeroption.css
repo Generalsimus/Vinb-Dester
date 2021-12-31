@@ -1,0 +1,17 @@
+#controll>label {
+    padding: 1.5% 0 1% 0;
+    display: inline-block;
+    margin: 0;
+    font-size: small;
+    font-weight: bold;
+}
+
+#controll>textarea {
+    width: 100%;
+    background: #525252;
+    resize: vertical;
+}
+
+#controll *{
+color: white;
+}

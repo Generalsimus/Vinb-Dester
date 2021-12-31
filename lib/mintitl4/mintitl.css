@@ -1,0 +1,7 @@
+.mintitl {
+    background: #e73737;
+    padding: .85em 1em;
+    border-left: 15px solid hsl(0, 62%, 45%);
+    color: white;
+    margin: 0 0 15px 0;
+}

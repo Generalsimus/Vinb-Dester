@@ -1,0 +1,198 @@
+body{
+    background: #1b1b1b;
+}
+.post {
+    width: 100%;
+    padding: 3% 3%;
+    box-sizing: border-box;
+}
+
+
+.post * {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vpost {
+    width: 18.8%;
+    padding-right: 1.5%;
+    /* box-sizing: border-box; */
+}
+
+
+
+.vpost:nth-child(5n) {
+    padding: 0;
+}
+
+.post .b {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.post .m {
+    width: 100%;
+    text-align: center;
+    color: #ff77c7;
+    font-weight: bold;
+    border: 1px solid #ff77c7;
+    padding: 1.5% 0;
+    cursor: pointer;
+    border-left: 0;
+    border-right: 0;
+    margin: 3% 0;
+    display: block;
+}
+
+.post .t {
+    width: 100%;
+    font-size: 2.5em;
+    margin: 2%;
+    color: #ff77c7;
+}
+
+
+.post>img {
+    width: 33%;
+}
+
+img {
+    width: 100%;
+}
+
+.vpost a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.vpost>:last-child {
+    margin: 5% 0;
+}
+
+.vpost a:hover {
+    text-decoration: underline;
+}
+
+
+.vpost>a:first-child:before {
+    content: "";
+    background: #000000 url(/wp-content/themes/Vinb%20Dester/lib/post1/play/10.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    top: 0;
+}
+
+.vpost>a:first-child:hover:before {
+    opacity: .6;
+}
+
+
+
+
+/* categoria */
+
+.catbox {
+    background: #1b1b1b;
+    padding: 3% 4%;
+}
+
+.catfunl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.catbox #vpost {
+    width: 24.25%;
+}
+
+.catbox * {
+    color: white;
+}
+
+/* ............... */
+/* pagination */
+.paginationcl {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.paginationcl>a,
+.paginationcl>span {
+    padding: 10px 12px;
+    border: 1px solid #ff77c7;
+    border-left: none;
+    cursor: pointer;
+
+}
+
+.paginationcl>span {
+    cursor: default;
+}
+
+.paginationcl>a:hover {
+    background: #676767;
+}
+
+.paginationcl>:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-left: 1px solid #ff77c7;
+    color: #ff77c7;
+}
+
+.paginationcl>a:not(:last-child):not(:first-child) {
+    font-size: small;
+}
+
+.paginationcl>:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #ff77c7;
+}
+
+.paginationcl .active {
+    background: #ff77c7 !important;
+    color: black;
+}
+
+/* ............... */
+
+
+@media screen and (max-width:1250px) {
+    .vpost {
+        width: 23.875%;
+        padding-right: 1.5% !important;
+    }
+
+    .vpost:nth-child(4n) {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .vpost {
+        width: 49.25%;
+        padding-right: 1.5% !important;
+    }
+
+    .vpost:nth-child(2n) {
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .vpost {
+        width: 100%;
+        padding: 0 !important;
+    }
+}
